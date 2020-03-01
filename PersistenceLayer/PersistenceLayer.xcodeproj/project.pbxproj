@@ -8,23 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E96D79E8240B9AF1003FA712 /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E96D79E6240B9AF1003FA712 /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E96D7A2F240BA35E003FA712 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96D7A2D240BA35E003FA712 /* DBConfig.plist */; };
+		E96D7A30240BA35E003FA712 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = E96D7A2E240BA35E003FA712 /* create_load.sql */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E96D7A07240B9B47003FA712 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E96D7A03240B9B46003FA712 /* BusniessLogicLayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E96D79F8240B9B46003FA712;
-			remoteInfo = BusniessLogicLayer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E96D79E3240B9AF1003FA712 /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96D79E6240B9AF1003FA712 /* PersistenceLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceLayer.h; sourceTree = "<group>"; };
 		E96D79E7240B9AF1003FA712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E96D7A03240B9B46003FA712 /* BusniessLogicLayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BusniessLogicLayer.xcodeproj; path = ../BusniessLogicLayer/BusniessLogicLayer.xcodeproj; sourceTree = "<group>"; };
+		E96D7A2D240BA35E003FA712 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
+		E96D7A2E240BA35E003FA712 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +34,6 @@
 		E96D79D9240B9AF1003FA712 = {
 			isa = PBXGroup;
 			children = (
-				E96D7A03240B9B46003FA712 /* BusniessLogicLayer.xcodeproj */,
 				E96D79E5240B9AF1003FA712 /* PersistenceLayer */,
 				E96D79E4240B9AF1003FA712 /* Products */,
 			);
@@ -58,18 +50,20 @@
 		E96D79E5240B9AF1003FA712 /* PersistenceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				E96D7A2C240BA35E003FA712 /* DBFile */,
 				E96D79E6240B9AF1003FA712 /* PersistenceLayer.h */,
 				E96D79E7240B9AF1003FA712 /* Info.plist */,
 			);
 			path = PersistenceLayer;
 			sourceTree = "<group>";
 		};
-		E96D7A04240B9B46003FA712 /* Products */ = {
+		E96D7A2C240BA35E003FA712 /* DBFile */ = {
 			isa = PBXGroup;
 			children = (
-				E96D7A08240B9B47003FA712 /* BusniessLogicLayer.framework */,
+				E96D7A2D240BA35E003FA712 /* DBConfig.plist */,
+				E96D7A2E240BA35E003FA712 /* create_load.sql */,
 			);
-			name = Products;
+			path = DBFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,12 +122,6 @@
 			mainGroup = E96D79D9240B9AF1003FA712;
 			productRefGroup = E96D79E4240B9AF1003FA712 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E96D7A04240B9B46003FA712 /* Products */;
-					ProjectRef = E96D7A03240B9B46003FA712 /* BusniessLogicLayer.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E96D79E2240B9AF1003FA712 /* PersistenceLayer */,
@@ -141,21 +129,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		E96D7A08240B9B47003FA712 /* BusniessLogicLayer.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = BusniessLogicLayer.framework;
-			remoteRef = E96D7A07240B9B47003FA712 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		E96D79E1240B9AF1003FA712 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96D7A30240BA35E003FA712 /* create_load.sql in Resources */,
+				E96D7A2F240BA35E003FA712 /* DBConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
